@@ -1,7 +1,7 @@
  Jefferson Junior Alvarez Urbina RM 558497
 
 
-#Dashboard de Monitoramento com MQTT e Tkinter
+# Dashboard de Monitoramento com MQTT e Tkinter
 Descrição do Projeto
 Este projeto é uma aplicação desenvolvida em Python que se conecta a um broker MQTT para monitorar dados de sensores em tempo real. Ele utiliza o protocolo MQTT para comunicação e Tkinter para exibição de um dashboard gráfico simples e intuitivo. Os dados monitorados incluem temperatura, umidade, luminosidade e alertas de energia, apresentados de maneira dinâmica e acessível ao usuário.
 
@@ -51,7 +51,7 @@ paho-mqtt
 #Instruções de Uso
 Clone o Repositório
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/JeffersonJuniorr/GS---Edge.git
 Entre no Diretório do Projeto
 
 cd dashboard-mqtt
