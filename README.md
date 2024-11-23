@@ -1,13 +1,13 @@
-# Jefferson Junior Alvarez Urbina RM 558497
+ Jefferson Junior Alvarez Urbina RM 558497
 
-Dashboard de Monitoramento com MQTT e Tkinter
-Descrição do Projeto
+# Dashboard de Monitoramento com MQTT e Tkinter
+#Descrição do Projeto
 Este projeto é uma aplicação em Python que monitora dados provenientes de sensores conectados a um broker MQTT. Utilizando a biblioteca Tkinter, os dados são exibidos em um dashboard gráfico de forma simples e intuitiva, permitindo o acompanhamento em tempo real de variáveis como temperatura, umidade, luminosidade e alertas de energia.
 
-Problema Abordado
+P#roblema Abordado
 A falta de ferramentas acessíveis e em tempo real para visualizar dados provenientes de sensores IoT dificulta o monitoramento e a tomada de decisões rápidas. Este projeto busca resolver essa lacuna ao criar uma interface amigável e eficiente que centraliza essas informações.
 
-Arquitetura do Projeto
+#Arquitetura do Projeto
 Cliente MQTT:
 
 Utiliza a biblioteca paho-mqtt para conectar-se ao broker, assinar tópicos e processar mensagens.
@@ -21,7 +21,8 @@ Interface Gráfica (Tkinter):
 Exibe os dados recebidos em tempo real.
 Atualiza automaticamente as variáveis conforme as mensagens chegam.
 Fornece um botão para encerrar o programa e desconectar do broker.
-Requisitos
+
+#Requisitos
 Softwares Necessários
 Python 3.8 ou superior.
 Dependências do Projeto
