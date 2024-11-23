@@ -1,65 +1,78 @@
  Jefferson Junior Alvarez Urbina RM 558497
 
-# Dashboard de Monitoramento com MQTT e Tkinter
-#Descrição do Projeto
-Este projeto é uma aplicação em Python que monitora dados provenientes de sensores conectados a um broker MQTT. Utilizando a biblioteca Tkinter, os dados são exibidos em um dashboard gráfico de forma simples e intuitiva, permitindo o acompanhamento em tempo real de variáveis como temperatura, umidade, luminosidade e alertas de energia.
 
-P#roblema Abordado
-A falta de ferramentas acessíveis e em tempo real para visualizar dados provenientes de sensores IoT dificulta o monitoramento e a tomada de decisões rápidas. Este projeto busca resolver essa lacuna ao criar uma interface amigável e eficiente que centraliza essas informações.
+Dashboard de Monitoramento com MQTT e Tkinter
+Descrição do Projeto
+Este projeto é uma aplicação desenvolvida em Python que se conecta a um broker MQTT para monitorar dados de sensores em tempo real. Ele utiliza o protocolo MQTT para comunicação e Tkinter para exibição de um dashboard gráfico simples e intuitivo. Os dados monitorados incluem temperatura, umidade, luminosidade e alertas de energia, apresentados de maneira dinâmica e acessível ao usuário.
 
-#Arquitetura do Projeto
+Motivação
+Com o crescimento de aplicações IoT, há uma necessidade crescente de ferramentas para monitorar sensores em tempo real. Muitas soluções existentes são complexas ou pouco acessíveis. Este projeto busca resolver esse problema criando um dashboard funcional e intuitivo que centraliza informações críticas e facilita a tomada de decisões.
+
+Tecnologias Utilizadas
+Python
+O Python foi escolhido devido à sua simplicidade, vasta comunidade de suporte e bibliotecas específicas para as necessidades do projeto. Ele permite integrar de forma eficiente o protocolo MQTT e a interface gráfica Tkinter.
+
+Paho MQTT
+Biblioteca que implementa o protocolo MQTT, facilitando a comunicação com o broker HiveMQ. É utilizada para conectar-se, assinar tópicos e processar mensagens.
+
+Tkinter
+Biblioteca nativa do Python para construção de interfaces gráficas. Foi utilizada para criar o dashboard, permitindo uma exibição visual dos dados recebidos pelo MQTT.
+
+HiveMQ
+Broker MQTT utilizado no projeto. Ele oferece uma solução confiável e segura para transmissão de dados entre dispositivos IoT e a aplicação.
+
+Wokwi
+Simulador de hardware usado para emular sensores IoT no projeto. Ele possibilita a geração de dados em tempo real, como temperatura, umidade e luminosidade, para validação do sistema.
+
+Arquitetura do Projeto
+Simulação de Sensores (Wokwi):
+
+Sensores simulados no Wokwi enviam dados de temperatura, umidade e luminosidade para o broker MQTT.
+Comunicação com o Broker (HiveMQ):
+
+O broker HiveMQ recebe os dados dos sensores e os disponibiliza para assinantes (neste caso, o dashboard).
 Cliente MQTT:
 
-Utiliza a biblioteca paho-mqtt para conectar-se ao broker, assinar tópicos e processar mensagens.
-Tópicos monitorados:
-renovavel/temperatura
-renovavel/umidade
-renovavel/luminosidade
-alertas/energia
-Interface Gráfica (Tkinter):
+A aplicação Python utiliza a biblioteca Paho MQTT para se conectar ao HiveMQ e receber os dados em tempo real.
+Interface Gráfica:
 
-Exibe os dados recebidos em tempo real.
-Atualiza automaticamente as variáveis conforme as mensagens chegam.
-Fornece um botão para encerrar o programa e desconectar do broker.
-
-#Requisitos
+O dashboard, desenvolvido com Tkinter, exibe as informações recebidas em tempo real e alerta o usuário em caso de mensagens críticas.
+Requisitos
 Softwares Necessários
 Python 3.8 ou superior.
-Dependências do Projeto
-As dependências podem ser instaladas com o comando:
+Dependências
+As dependências do projeto estão listadas no arquivo requirements.txt.
 
-pip install -r requirements.txt
-Lista de Dependências:
-
+python
+Copiar código
 paho-mqtt
-tkinter (nativo no Python)
-
 Instruções de Uso
-
-Clone este repositório:
+Clone o Repositório
+python
+Copiar código
 git clone https://github.com/seu-usuario/seu-repositorio.git
-Entre no diretório do projeto:
-
-
+Entre no Diretório do Projeto
+python
+Copiar código
 cd dashboard-mqtt
-Instale as dependências:
-
-
+Instale as Dependências
+python
+Copiar código
 pip install -r requirements.txt
-Execute o programa:
-
-
+Inicie a Aplicação
+python
+Copiar código
 python main.py
-Interação com o Dashboard:
-
-O dashboard exibirá dados em tempo real provenientes dos sensores.
+Interação com o Dashboard
+O dashboard exibirá os dados em tempo real recebidos do broker.
 Para encerrar, clique no botão "Sair".
 Resultados Esperados
-Monitoramento em tempo real de dados de sensores.
-Interface gráfica intuitiva para exibir variáveis e alertas.
-Possibilidade de rápida tomada de decisão com base nos dados apresentados.
-Impacto
-Este projeto oferece uma solução prática e acessível para monitorar sistemas IoT, promovendo maior eficiência na gestão de sensores e reações rápidas a eventos críticos. Sua aplicação pode ser estendida para diversos cenários, como automação residencial, monitoramento industrial e sustentabilidade energética.
+Monitoramento eficiente e em tempo real dos dados enviados pelos sensores.
+Interface gráfica amigável que facilita a visualização e a interpretação dos dados.
+Capacidade de emitir alertas ao usuário em situações críticas, como problemas relacionados ao consumo de energia.
+Impacto Esperado
+Este projeto visa facilitar a gestão de dados IoT em sistemas de monitoramento, promovendo maior controle e eficiência. Ele é aplicável em diversas áreas, como automação residencial, monitoramento industrial e gestão sustentável de energia. Ao simplificar o acesso a informações críticas, a solução melhora a tomada de decisões e otimiza recursos.
 
 Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias e correções.
+Contribuições para melhorias ou novas funcionalidades são sempre bem-vindas. Para isso, envie suas sugestões através de issues ou pull requests.
+
